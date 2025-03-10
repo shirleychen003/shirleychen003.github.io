@@ -8,9 +8,10 @@
     font-family: "Poppins", sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth;}
+
+/* TEXT */
+h1 { font-size: 36x; }
 
 
 /* NAVBAR */
@@ -180,5 +181,50 @@ fa-gem {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+/* LANDING */
+.landing {
+    align-items: center;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+}
+
+landing_header {font-size: 70px; font-weight: 600; max-width: 1001px; margin-bottom: 1rem;}
+landing_p {font-size: 30px; max-width: 1001px;}
+
+/* PROJECTS SECION */
+.homepage_projects {
+    padding: 8rem;
+  }
+  #homepage_projects_header {
+    text-align: left;
+  }
+  
+  #homepage_projects_content {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Optionally centers the content vertically if needed */
+  }
+  
+  #homepage_projects_content p {
+    font-size: 20px; /* You can adjust the font size */
+  }
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 4%;
+    border-top: 1.5px solid black;
+
+}
+
+.footer-text {
+    font-size: 1rem;
 }
 
