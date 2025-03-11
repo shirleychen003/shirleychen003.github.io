@@ -214,24 +214,21 @@ landing_p {font-size: 30px; max-width: 1001px;}
     font-size: 20px; 
   }
 
-  /* .projects_grid {
+.project_grid {
     display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        gap: 10px;
-        padding: 20px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1001px;
+    margin: 0 auto;
 }
-.grid-item {
-    background-color: #3498db;
-    color: white;
+
+.project {
     padding: 20px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px; */
+    border-radius: 8px;
+    text-align: left;
 }
+
+
 
 /* GET IN TOUCH */
 .get_in_touch {
