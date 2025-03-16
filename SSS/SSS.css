@@ -1,0 +1,110 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html { scroll-behavior: smooth;}
+
+/* TEXT */
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 28px; }
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1.5px solid black;
+    padding: 2rem;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.logo img {
+    padding: 5px; 
+    display: block;
+}
+
+fa-gem {
+    margin-right: 0.5 rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__links:hover {
+    color: grey;
+    transition: all 0.3 ease;
+}
+
+/* PROJECT HEADER */
+
+#project_header {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    flex-direction: column;
+    background-color: #F6F6F6;
+    border-bottom: 2px solid black;
+}
+
+#project_title img {
+    max-width: 50%; 
+    height: auto; 
+    border: 2px solid black;
+    margin: 1rem 0 1rem 0;
+}
+
+#project_info {
+    display: flex; /* Use flexbox to arrange child elements */
+    justify-content: space-around;
+    align-items: flex-start; /* Align the items to the top */
+    flex-wrap: wrap; /* Allow items to wrap if there is not enough space */
+    gap: 2rem;
+}
+
+.header_section {
+    margin: 1rem;
+}
