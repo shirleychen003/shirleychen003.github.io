@@ -118,11 +118,11 @@ hero_p {
 
 #hero img{
     align-self: center;
-    margin: 2rem 0 2.5rem 0;
+    margin: 1rem 0 1.5rem 0;
     width: 15%;
 }
 
-.hero {
+/* .hero {
     padding: 2rem;
     background-color: #F6F6F6;
     display: flex;
@@ -134,7 +134,7 @@ hero_p {
 .hero img{
     width: 15%;
     margin-top: 1rem;
-}
+} */
 
 .landing {
     display: flex;
@@ -409,8 +409,8 @@ hero_p {
         padding-top: 1rem;
     }
 
-    .hero img {
-        max-width: 20%;
+    #hero img {
+        width: 40%;
     }
 
     .about_introduction {
@@ -442,9 +442,7 @@ hero_p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .hero img {
-        max-width: 20%;
-    }
+
     .homepage_projects {
         padding: 3rem 8rem 3rem 8rem;
     }

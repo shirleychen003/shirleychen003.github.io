@@ -133,6 +133,33 @@ fa-gem {
     text-align: center;
   }
 
+  .project_image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project_image img{
+    margin: 1rem 0 1rem 1rem;
+    width: 100%;
+  }
+
+  #selena_intro {
+    display: block; /* Ensures proper text wrapping */
+    margin: 0 auto; /* Centers content */
+}
+
+.selena_intro_img img {
+    float: right; 
+    margin: 0 0 15px 15px; 
+    max-width: 15%; /* Adjust image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+.selena_intro_text {
+    overflow: hidden; /* Prevents text from overlapping */
+}
+
   /* FOOTER */
 
 .footer {
