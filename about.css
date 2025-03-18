@@ -353,4 +353,14 @@ fa-gem {
         width: 100%;
     }
 
+    .activity_photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity_photos img {
+        width: 100%; 
+        height: auto; 
+    }
+
     }
