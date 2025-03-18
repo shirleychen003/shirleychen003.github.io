@@ -95,11 +95,17 @@ fa-gem {
     padding: 1rem 0 1rem 0;
 }
 
+.section_grey {
+    padding: 1rem 0 1rem 0;
+    background-color: #F6F6F6;
+}
+
 #about_me {
     display: flex;
     align-items: stretch;
     gap: 40px; 
     width: 100%;
+    padding-top: 1rem;
 }
 
 #about_me_photo img {
@@ -116,6 +122,69 @@ fa-gem {
     padding: 1rem 0 1rem 0;
 }
 
+/* TOOLS SLIDING BAR*/
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
+.tools {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 0;
+    background: white;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.tools_header {
+    text-align: center; 
+    margin-bottom: 1rem; 
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.tools:before, 
+.tools:after {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+
+}
+
+.tools:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.tools:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/* .tools:hover .sliding_tools {
+    animation-play-state: paused;
+} */
+
+
+.sliding_tools {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+.sliding_tools img {
+    height: 50px;
+    margin: 0 2rem;
+}
 
 /* EDUCATION EXPERIENCES COMMUNITY */
 #eec {
