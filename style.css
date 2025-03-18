@@ -262,50 +262,6 @@ hero_p {
     font-size: 1rem;
 }
 
-/* ABOUT PAGE */
-
-.about_introduction {
-    padding: 0rem 5rem 0rem 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-
-}
-
-.about_introduction h1{
-    font-size: 3rem;
-}
-
-.about_introduction p{
-    font-size: 1rem;
-}
-
-.about_introduction img{
-    max-width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.column {
-    padding: 5%;
-}
-
-.about_introduction h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-/* EDUCATION EXPERIENCES COMMUNITY */
-.education_experiences_community {
-    padding: 0rem 6rem 0rem 6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* TABLET AND SMALLER */
 @media only screen and (max-width: 601px) {
     #homepage_projects .project_row {
