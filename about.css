@@ -15,6 +15,7 @@ h1 { font-size: 36px; }
 h2 { font-size: 30px; }
 h3 { font-size: 28px; }
 h4 { font-size: 20px;}
+p {font-size: 16px;}
 
 
 /* NAVBAR */
@@ -82,12 +83,12 @@ fa-gem {
 /* CONTENT */
 
 .content {
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 1rem 0 1rem 0;
 
 }
@@ -187,9 +188,6 @@ fa-gem {
 }
 
 /* EDUCATION EXPERIENCES COMMUNITY */
-#eec {
-    width: 100%;
-}
 
 #eec_text {
     display: grid;
@@ -198,22 +196,31 @@ fa-gem {
 }
 
 .column {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.column > div:first-child {
+    margin-bottom: auto;
 }
 
 .column_photo {
-    width: 100%; 
-    aspect-ratio: 1.5 / 1; 
+    width: 100%;
+    height: 300px; 
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 1.5rem;
 }
 
 .column_photo img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    margin-top: 1rem;
 }
 
+/* ACTIVITIES */
 .activity {
     padding: 1rem 0 1rem 0;
 }
@@ -221,16 +228,61 @@ fa-gem {
 .activity_photos {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
     flex-wrap: wrap;
-    margin-top: 0.5rem;
+    width: 100%;
+    padding-top: 1rem;
+    gap: 0.5rem;
 }
 
 .activity_photos img {
-    width: auto; 
-    height: 100%; 
-    max-height: 300px; 
-    object-fit: cover; 
+    flex: 1; 
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; 
+    object-fit: cover;
+}
+
+/* GET IN TOUCH */
+.get_in_touch {
+    padding: 3rem;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+#logo {
+    margin: 15px 0 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#logo a {
+    position: relative;
+    display: inline-block;
+}
+
+#logo a img {
+    max-width: 40px;
+    max-height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#logo a .logo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#logo a:hover .logo-default {
+    opacity: 0;
+}
+
+#logo a:hover .logo-hover {
+    opacity: 1;
 }
 
 /* FOOTER */
@@ -363,4 +415,34 @@ fa-gem {
         height: auto; 
     }
 
+}
+/* BIGGER THAN A LAPTOP */
+
+@media only screen and (min-width: 1500px) {
+    .content {
+        max-width: 70%;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem 0 1rem 0;
+    
     }
+
+    .activity_photos {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .activity_photos img {
+        flex: 1; 
+        max-width: 100%;
+        height: auto;
+        max-height: 500px; 
+        object-fit: cover;
+    }
+}
+    

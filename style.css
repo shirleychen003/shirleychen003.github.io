@@ -14,7 +14,7 @@ html { scroll-behavior: smooth;}
 h1 { font-size: 36px; }
 h2 { font-size: 30px; }
 h3 { font-size: 28px; }
-project_type {font-size: 18px; font-weight: 600; color: #0C7700;}
+project_type {font-size: 18px; font-weight: 600; color: #0A4A03;}
 
 
 /* NAVBAR */
@@ -167,7 +167,7 @@ hero_p {
     gap: 3rem; 
     margin-bottom: 1.5rem;
     justify-items: center; 
-    align-items: center;
+    align-items: stretch;
     
 }
 
@@ -200,7 +200,7 @@ hero_p {
 }
 
 .project img:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
 }
 
 
