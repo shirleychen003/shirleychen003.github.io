@@ -206,6 +206,14 @@ fa-gem {
     margin-bottom: auto;
 }
 
+#experience {
+    text-align: center;
+}
+
+#community {
+    text-align: right;
+}
+
 .column_photo {
     width: 100%;
     height: 300px; 
