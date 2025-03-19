@@ -15,6 +15,7 @@ h1 { font-size: 36px; }
 h2 { font-size: 30px; }
 h3 { font-size: 28px; }
 project_type {font-size: 18px; font-weight: 600; color: #0A4A03;}
+project_date {font-size: 16px; font-weight: 400; font-style:italic}
 
 
 /* NAVBAR */
@@ -269,15 +270,9 @@ hero_p {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto; 
+        align-items: stretch;
     }
 
-    .project_grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 55px;
-        margin: 0 auto;
-        max-width: 1001px;
-    }
     .navbar__container {
         display: flex;
         justify-content: space-between;
