@@ -6,6 +6,7 @@
     <title>Shirley Chen</title>
     <link href="https://api.fontshare.com/css?f[]=satoshi@500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"> </script>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -35,13 +36,21 @@
         </ul>
       </div>
     </nav>
-    <script src="app.js"> </script>
   
   <!--HERO -->
   <div id="hero">
     <div id="hero_content">
       <hero_header> hi there, my name is shirley! </hero_header>
       <hero_p> currently a bachelor of information ischool student with a growing passion in ux/ui design and data science :) </hero_p>
+      <div class="clock">
+        <p>my time: </p>
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="ampm"></span>
+      </div>
     </div>
     <img src="./images/home_images/capybara_heart.png" alt="Happy Capybara"> 
   </div>
@@ -118,5 +127,31 @@
     </div>
   </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function updateTime() {
+        const now = new Date();
+        
+        const options = { timeZone: "America/New_York", hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" };
+        const formatter = new Intl.DateTimeFormat("en-US", options);
+        const parts = formatter.formatToParts(now);
+
+        let hours = parts.find(p => p.type === "hour").value;
+        let minutes = parts.find(p => p.type === "minute").value;
+        let seconds = parts.find(p => p.type === "second").value;
+        let ampm = hours >= 12 ? "PM EST" : "AM EST";
+
+        hours = hours % 12 || 12;
+
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+        document.getElementById("ampm").textContent = ampm;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    });
+  </script>
 </body>
 </html>

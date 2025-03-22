@@ -103,8 +103,8 @@ fa-gem {
 }
 
 hero_header {
-    margin-top: 2.5rem;
     width: 100%; 
+    margin-top: 2.5rem;
     text-align: left;
     font-size: 4.61rem;
     font-weight: 600;
@@ -122,6 +122,15 @@ hero_p {
     align-self: center;
     margin: 1rem 0 1.5rem 0;
     width: 15%;
+}
+
+.clock {
+    display: flex;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+p {
+    margin-right: 10px;
 }
 
 /* .hero {
