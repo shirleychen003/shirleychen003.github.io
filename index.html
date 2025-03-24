@@ -43,7 +43,7 @@
       <hero_header> hi there, my name is shirley! </hero_header>
       <hero_p> currently a bachelor of information ischool student with a growing passion in ux/ui design and data science :) </hero_p>
       <div class="clock">
-        <!-- <p>my time: </p> -->
+        <p>based in toronto → </p>
         <span id="hours">00</span>
         <span>:</span>
         <span id="minutes">00</span>
@@ -139,7 +139,7 @@
         let hours = parts.find(p => p.type === "hour").value;
         let minutes = parts.find(p => p.type === "minute").value;
         let seconds = parts.find(p => p.type === "second").value;
-        let ampm = hours >= 12 ? "PM EST" : "AM EST";
+        let ampm = hours >= 12 ? " PM EST" : " AM EST";
 
         hours = hours % 12 || 12;
 
