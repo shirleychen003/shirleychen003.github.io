@@ -15,7 +15,7 @@ h1 { font-size: 36px; }
 h2 { font-size: 30px; }
 h3 { font-size: 28px; }
 h4 { font-size: 20px;}
-p {font-size: 16px;}
+p {font-size: 16px; margin: 0;}
 
 
 
@@ -111,13 +111,15 @@ fa-gem {
 }
 
 #about_me_photo img {
-    width: 23rem;
+    height: 24rem;
+    display: block;
 }
 
 #about_me_info {
     flex: 1;
-    flex-direction: column; 
-    justify-content: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #about_me_info h1 {
@@ -250,27 +252,34 @@ fa-gem {
     max-height: 250px; 
     object-fit: cover;
 }
-.title {
-    background-color: rgb(0, 0, 0, 0.5);
-/*positioned relative to parent div (container) */
-    position: absolute;    
-/* bottom margin is 0 so that it
-coincides with container's bottom margin*/
-    bottom: 0;            
-    color: white;
+/* .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
-    font-size: 25px;
-    padding: 15px 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .activity:hover .overlay {
+    opacity: 1;
+  }
+  
+  .title {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-    /*invisible because opacity is 0*/
-    opacity: 0;            
-    transition: 0.6s;
-}
-
-.photo:hover .title {
-/*becomes visible on hover*/
-    opacity: 1;        
-}
+  } */
 
 
 /* GET IN TOUCH */
