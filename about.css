@@ -252,35 +252,63 @@ fa-gem {
     max-height: 250px; 
     object-fit: cover;
 }
-/* .overlay {
+
+.photo-wrapper {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    max-height: 250px; /* Adjust this value for your layout */
+    overflow: hidden;
+    flex: 1; /* Distributes images evenly */
+}
+
+.photo-wrapper img {
+    width: 100%;
+    height: 100%;
+    max-height: 250px; /* Keep all images the same height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling space */
+    transition: filter 0.3s ease-in-out;
+}
+
+.photo-wrapper::after {
+    content: "";
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
     opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-  
-  .activity:hover .overlay {
-    opacity: 1;
-  }
-  
-  .title {
-    color: white;
-    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.photo-wrapper::before {
+    content: attr(data-title);
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    max-width: 80%;
     text-align: center;
-  } */
+    white-space: normal;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+}
 
+.photo-wrapper:hover::after {
+    opacity: 1;
+}
+
+.photo-wrapper:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* GET IN TOUCH */
 .get_in_touch {
@@ -454,8 +482,22 @@ fa-gem {
         width: 100%; 
         height: auto; 
     }
+    
+    .photo-wrapper {
+        width: 100%; /* Ensure each image takes up the full width of its container */
+        max-width: 100%; /* Prevent overflow */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .photo-wrapper img {
+        width: 100%; /* Make the image fill its container */
+        height: auto; /* Keep aspect ratio intact */
+        object-fit: cover; /* Ensure images cover the space without distortion */
+        max-height: 400px; /* Optional: Prevent overly tall images */
+    }
 
 }
+
 /* BIGGER THAN A LAPTOP */
 
 @media only screen and (min-width: 1600px) {
