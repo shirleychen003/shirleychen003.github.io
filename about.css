@@ -8,7 +8,15 @@
     font-family: "Poppins", sans-serif;
 }
 
-html { scroll-behavior: smooth;}
+html { 
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0; 
+    padding: 0; 
+}
 
 /* TEXT */
 h1 { font-size: 36px; }
@@ -78,7 +86,7 @@ fa-gem {
 
 .navbar__links:hover {
     color: grey;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 /* CONTENT */
@@ -382,6 +390,13 @@ fa-gem {
 
 /* TABLET AND SMALLER */
 @media only screen and (max-width: 601px) {
+    #homepage_projects .project_row {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto; 
+        align-items: stretch;
+    }
+
     .navbar__container {
         display: flex;
         justify-content: space-between;

@@ -8,8 +8,15 @@
     font-family: "Poppins", sans-serif;
 }
 
-html { scroll-behavior: smooth;}
+html { 
+    scroll-behavior: smooth;
+}
 
+html, body {
+    overflow-x: hidden;
+    margin: 0; 
+    padding: 0; 
+}
 /* TEXT */
 h1 { font-size: 36px; }
 h2 { font-size: 30px; }
@@ -372,6 +379,7 @@ p {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .homepage_projects h1 {
         padding-bottom: 1rem;
         padding-top: 1rem;
