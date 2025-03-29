@@ -140,20 +140,6 @@ p {
     margin-right: 10px;
 }
 
-/* .hero {
-    padding: 2rem;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    justify-content: center;  
-    text-align: left; 
-}
-.hero img{
-    width: 15%;
-    margin-top: 1rem;
-} */
-
 .landing {
     display: flex;
     flex-direction: column;
@@ -289,13 +275,7 @@ p {
 
 /* TABLET AND SMALLER */
 @media only screen and (max-width: 601px) {
-    #homepage_projects .project_row {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0 auto; 
-        align-items: stretch;
-    }
-
+    /* NAVBAR */
     .navbar__container {
         display: flex;
         justify-content: space-between;
