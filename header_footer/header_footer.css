@@ -140,10 +140,9 @@
     }
 
     #mobile-menu {
-        position: fixed;
-        top: 3.25%;
+        position: sticky;
         right: 7.5%;
-        transform: translate(5%, 20%);
+        transform: translate(5%, 5%);
     } 
 
     .navbar__toggle .bar {
@@ -152,7 +151,7 @@
         cursor: pointer;
         width: 30px;
         height: 3px;
-        margin: 5px auto;
+        margin: 5px;
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
