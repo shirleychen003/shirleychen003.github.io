@@ -6,153 +6,127 @@
     <title>Shirley Chen</title>
     <link href="https://api.fontshare.com/css?f[]=satoshi@500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header_footer/header_footer.css">
     <script src="app.js"> </script>
+    <script src="header_footer/header_footer.js" defer></script>
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <div class="logo">
-          <a href="https://shirleychen003.github.io/"> 
-              <img src="./images/home_images/sc_logo.png" alt="Shirley Chen Logo" style="width: 100px; height: auto;">
-          </a>
-      </div>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span><span class="bar"></span>
-          <span class="bar"></span>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!--HERO -->
+    <div id="hero">
+      <div id="hero_content">
+        <hero_header> hi there, my name is shirley! </hero_header>
+        <hero_p> currently a bachelor of information ischool student with a growing passion in ux/ui design and data science :) </hero_p>
+        <div class="clock">
+          <p>based in toronto → </p>
+          <span id="hours">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+          <span id="ampm"></span>
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/fun.html" class="navbar__links"> FUN</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/about.html" class="navbar__links"> ABOUT</a>
-          </li>
-          <li class="navbar__item">
-            <a href="https://drive.google.com/file/d/1VRC7HkrxIhzwBV2sN6O6UMitevrBCWjV/view?usp=sharing" class="navbar__links" target="_blank">
-                RESUME
-            </a>
-          </li>
-        </ul>
       </div>
-    </nav>
-  
-  <!--HERO -->
-  <div id="hero">
-    <div id="hero_content">
-      <hero_header> hi there, my name is shirley! </hero_header>
-      <hero_p> currently a bachelor of information ischool student with a growing passion in ux/ui design and data science :) </hero_p>
-      <div class="clock">
-        <p>based in toronto → </p>
-        <span id="hours">00</span>
-        <span>:</span>
-        <span id="minutes">00</span>
-        <span>:</span>
-        <span id="seconds">00</span>
-        <span id="ampm"></span>
-      </div>
-    </div>
-    <img src="./images/home_images/capybara_heart.png" alt="Happy Capybara"> 
+      <img src="./images/home_images/capybara_heart.png" alt="Happy Capybara"> 
   </div>
 
-  <!-- projects -->
-  <div id="homepage_projects">
-    <div id="homepage_projects_header">
-      <h1>some things i've worked on </br></h1>
-    </div>
-    <div class="project_row">
-      <div class="project">
-        <!-- <a href="/preservr.html"> -->
-          <img src="./images/capstone/preservr.me.png" id="PRESERVR"  alt="Preservr Mockup">
-        <!-- </a> -->
-          <project_type>CAPSTONE PROJECT</project_type>
-          <h2>preservr.me</h2>
-          <project_date>January - April 2025</project_date>
-          <p>A resource to help digital natives archive, organize, and curate their personal digital histories.</p>
+    <!-- projects -->
+    <div id="homepage_projects">
+      <div id="homepage_projects_header">
+        <h1>some things i've worked on </br></h1>
       </div>
-      <div class="project">
-        <!-- <a href="/SENAI.html"> -->
-          <img src="./images/SENAI/senai2.png" id="SENAI" alt="SENAI">
-        <!-- </a> -->
-          <project_type>SPECULATIVE DESIGN</project_type>
-          <h2>Social Emotional Navigation AI</h2>
-          <project_date>February - April 2025</project_date>
-          <p>A tool that will help you never make a mistake interacting with others ever again!</p>
+      <div class="project_row">
+        <div class="project">
+          <!-- <a href="/preservr.html"> -->
+            <img src="./images/capstone/preservr.me.png" id="PRESERVR"  alt="Preservr Mockup">
+          <!-- </a> -->
+            <project_type>CAPSTONE PROJECT</project_type>
+            <h2>preservr.me</h2>
+            <project_date>January - April 2025</project_date>
+            <p>A resource to help digital natives archive, organize, and curate their personal digital histories.</p>
+        </div>
+        <div class="project">
+          <!-- <a href="/SENAI.html"> -->
+            <img src="./images/SENAI/senai2.png" id="SENAI" alt="SENAI">
+          <!-- </a> -->
+            <project_type>SPECULATIVE DESIGN</project_type>
+            <h2>SENai</h2>
+            <project_date>February - April 2025</project_date>
+            <p>A tool that will help you never make a mistake interacting with others ever again!</p>
+        </div>
+      </div>
+      <div class="project_row">
+        <div class="project">
+          <a href="/SSS.html">
+            <img src="./images/SSS/SSS_homepage.png" alt="SSS">
+          </a>
+            <project_type>CASE STUDY - UX/UI DESIGN</project_type>
+            <h2>Subscriptions Super Simplified</h2>
+            <project_date>October - December 2023</project_date>
+            <p>A subscriptions service manager app to assist with preventable issues that commonly emerge.</p>
+        </div>
+        <div class="project">
+          <!-- <a href="/website.html"> -->
+          <a href="https://shirleychen003.github.io">
+            <img src="./images/home_images/personal_website.png" alt="Personal Website">
+          </a>
+            <project_type>WEB DEVELOPMENT</project_type>
+            <h2>shirleychen003. github. io</h2>
+            <project_date>March 2025 - Present</project_date>
+            <p>My personal website/digital portfolio (that you're looking at right now) that showcases my current brand :)</p>
+        </div>
       </div>
     </div>
-    <div class="project_row">
-      <div class="project">
-        <a href="/SSS.html">
-          <img src="./images/SSS/SSS_homepage.png" alt="SSS">
+
+    <!-- GET IN TOUCH -->
+    <div class="get_in_touch">
+      <p> like what you see so far? </p>
+      <h1> let's get in touch!</h1>
+      <div id="logo">
+        <a href="https://www.linkedin.com/in/shirleychen003" target="_blank">
+          <img src="./images/home_images/linkedin_logo.png" alt="LinkedIn Logo">
+          <img class="logo-hover" src="./images/home_images/linkedin_logo_hover.png" alt="LinkedIn Hover Logo">
         </a>
-          <project_type>CASE STUDY - UX/UI DESIGN</project_type>
-          <h2>Subscriptions Super Simplified</h2>
-          <project_date>October - December 2023</project_date>
-          <p>A subscriptions service manager app to assist with preventable issues that commonly emerge.</p>
-      </div>
-      <div class="project">
-        <!-- <a href="/website.html"> -->
-        <a href="https://shirleychen003.github.io">
-          <img src="./images/home_images/personal_website.png" alt="Personal Website">
         </a>
-          <project_type>WEB DEVELOPMENT</project_type>
-          <h2>shirleychen003. github. io</h2>
-          <project_date>March 2025 - Present</project_date>
-          <p>My personal website/digital portfolio (that you're looking at right now) that showcases my current brand :)</p>
+        <a href="mailto:shirleychen003@gmail.com">
+          <img src="./images/home_images/email_logo.png" alt="Email Logo">
+          <img class="logo-hover" src="./images/home_images/email_logo_hover.png" alt="Email Hover Logo">
+        </a>
       </div>
+      <img src="./images/home_images/capybara_music.png" alt="Capybara Music">
     </div>
-  </div>
 
-  <!-- GET IN TOUCH -->
-  <div class="get_in_touch">
-    <p> like what you see so far? </p>
-    <h1> let's get in touch!</h1>
-    <div id="logo">
-      <a href="https://www.linkedin.com/in/shirleychen003" target="_blank">
-        <img src="./images/home_images/linkedin_logo.png" alt="LinkedIn Logo">
-        <img class="logo-hover" src="./images/home_images/linkedin_logo_hover.png" alt="LinkedIn Hover Logo">
-      </a>
-      </a>
-      <a href="mailto:shirleychen003@gmail.com">
-        <img src="./images/home_images/email_logo.png" alt="Email Logo">
-        <img class="logo-hover" src="./images/home_images/email_logo_hover.png" alt="Email Hover Logo">
-      </a>
-    </div>
-    <img src="./images/home_images/capybara_music.png" alt="Capybara Music">
-  </div>
+    <!-- FOOTER -->
+    <div id="footer"></div>
 
- <!-- FOOTER -->
- <footer class = "footer">
-    <div id = "footer-text">
-      <p> <i>Thanks for visiting, come back soon !! ⋆𐙚₊˚⊹♡✧ </i>  Shirley ©hen 2025</p>
-    </div>
-  </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          function updateTime() {
+          const now = new Date();
+          
+          const options = { timeZone: "America/New_York", hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" };
+          const formatter = new Intl.DateTimeFormat("en-US", options);
+          const parts = formatter.formatToParts(now);
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        function updateTime() {
-        const now = new Date();
-        
-        const options = { timeZone: "America/New_York", hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" };
-        const formatter = new Intl.DateTimeFormat("en-US", options);
-        const parts = formatter.formatToParts(now);
+          let hours = parts.find(p => p.type === "hour").value;
+          let minutes = parts.find(p => p.type === "minute").value;
+          let seconds = parts.find(p => p.type === "second").value;
+          let ampm = hours >= 12 ? " PM EST" : " AM EST";
 
-        let hours = parts.find(p => p.type === "hour").value;
-        let minutes = parts.find(p => p.type === "minute").value;
-        let seconds = parts.find(p => p.type === "second").value;
-        let ampm = hours >= 12 ? " PM EST" : " AM EST";
+          hours = hours % 12 || 12;
 
-        hours = hours % 12 || 12;
+          document.getElementById("hours").textContent = hours;
+          document.getElementById("minutes").textContent = minutes;
+          document.getElementById("seconds").textContent = seconds;
+          document.getElementById("ampm").textContent = ampm;
+          }
 
-        document.getElementById("hours").textContent = hours;
-        document.getElementById("minutes").textContent = minutes;
-        document.getElementById("seconds").textContent = seconds;
-        document.getElementById("ampm").textContent = ampm;
-        }
-
-        setInterval(updateTime, 1000);
-        updateTime();
-    });
-  </script>
-</body>
+          setInterval(updateTime, 1000);
+          updateTime();
+      });
+    </script>
+  </body>
 </html>
