@@ -32,30 +32,27 @@ p {font-size: 16px; margin: 0;}
     background: white;
     height: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
     z-index: 999;
     border-bottom: 1.5px solid black;
-    padding: 2rem;
 }
 
 .navbar__container {
+    margin-left: 7.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0px;
+    width: 80%;
+    padding: 0;
 }
 
 .logo img {
-    padding: 5px; 
+    max-width: 5rem;
     display: block;
 }
 
@@ -112,26 +109,34 @@ fa-gem {
 
 #about_me {
     display: flex;
+    flex-wrap: wrap; 
     align-items: stretch;
-    gap: 40px; 
+    gap: 4rem;
     width: 100%;
     padding-top: 1rem;
 }
 
+#about_me_photo {
+    display: flex;
+}
+
 #about_me_photo img {
     height: 24rem;
+    max-width: 100%; 
+    object-fit: cover; 
     display: block;
 }
 
 #about_me_info {
-    flex: 1;
-    display: flex; 
+    flex: 2; 
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    min-width: 250px;
 }
 
 #about_me_info h1 {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
 }
 
 /* TOOLS SLIDING BAR*/
@@ -364,18 +369,18 @@ fa-gem {
 /* FOOTER */
 
 .footer {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1.5rem 3rem 1.5rem 3rem; 
+    align-items: left;
+    padding: 1.75rem 0;
     border-top: 1.5px solid black;
-
 }
 
-.footer-text {
-    font-size: 1rem;
-}
+  #footer-text {
+    width: 85%;
+    margin-left: 7.5%; 
+    text-align: left; 
+  }
 
 @media only screen and (max-width: 950px) {
     #about_me {

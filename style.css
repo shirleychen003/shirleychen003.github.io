@@ -46,14 +46,13 @@ project_date {font-size: 16px; font-weight: 400; font-style:italic}
     align-items: center;
     height: 80px;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
+    width: 80%;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0;
 }
 
 .logo img {
-    padding: 5px; 
+    max-width: 5rem;
     display: block;
 }
 
@@ -260,18 +259,19 @@ p {
 /* FOOTER */
 
 .footer {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1.5rem 3rem 1.5rem 3rem; 
+    align-items: left;
+    padding: 1.75rem 0;
     border-top: 1.5px solid black;
-
 }
 
-.footer-text {
-    font-size: 1rem;
-}
+  #footer-text {
+    width: 80%; 
+    margin-left: 10%; 
+    text-align: left; 
+  }
+
 
 /* TABLET AND SMALLER */
 @media only screen and (max-width: 601px) {
