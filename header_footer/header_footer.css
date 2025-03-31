@@ -109,11 +109,13 @@
     .navbar__menu.active {
         background: white;
         top: 100%;
-        opacity: 0.8;
+        opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
+        border-top: 0.5px solid black;
+        border-bottom: 1px solid black;
     }
 
     #navbar__logo {
