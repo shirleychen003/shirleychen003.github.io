@@ -317,7 +317,7 @@ p {font-size: 16px; margin: 0;}
 }
 
 /* TABLET AND SMALLER */
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 630px) {
     #homepage_projects .project_row {
         display: grid;
         grid-template-columns: 1fr;
@@ -330,6 +330,14 @@ p {font-size: 16px; margin: 0;}
         flex-direction: column; 
         gap: 20px; 
         width: 100%;
+    }
+
+    .column {
+        text-align: center;
+    }
+
+    #community {
+        text-align: center;
     }
 
     .activity_photos {
