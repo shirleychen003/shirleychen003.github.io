@@ -77,7 +77,27 @@ red_text {font-weight: 500; color: red}
   }
 
   #skills_list {
-    margin-left: 5%;
+    margin-left: 3%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .website_img{
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  img_caption {
+    size: 8px;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .design_development {
+    margin-left: 3%;
   }
 
   @media only screen and (max-width: 601px) {
