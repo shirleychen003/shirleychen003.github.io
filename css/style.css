@@ -150,10 +150,6 @@ p {
     content: url('./images/home_images/preservr_comingsoon.png');
 }
 
-#SENAI:hover {
-    content: url('./images/home_images/senai_comingsoon.png');
-}
-
 /* GET IN TOUCH */
 .get_in_touch {
     padding: 3rem;
