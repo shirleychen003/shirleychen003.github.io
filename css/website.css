@@ -23,6 +23,11 @@ h3 { font-size: 1.5rem; }
 subheading {font-size: 1.5rem; color:#5A5A5A}
 blue_text {font-weight: 500; color: blue}
 red_text {font-weight: 500; color: red}
+img_caption {
+    font-size: 0.8rem;
+    text-align: center;
+    font-style: italic;
+  }
 
 /* PROJECT HEADER */
 
@@ -91,12 +96,6 @@ red_text {font-weight: 500; color: red}
     display: flex;
     flex-direction: column;
 }
-
-  img_caption {
-    size: 8px;
-    text-align: center;
-    font-style: italic;
-  }
 
   .design_development {
     margin-left: 3%;

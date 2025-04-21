@@ -108,12 +108,6 @@ red_text {font-weight: 500; color: red}
     flex-direction: column;
 }
 
-  img_caption {
-    size: 4px;
-    text-align: center;
-    font-style: italic;
-  }
-
   @media only screen and (max-width: 601px) {
 
     /* OTHER */
