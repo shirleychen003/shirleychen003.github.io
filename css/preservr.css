@@ -25,6 +25,12 @@ subheading {font-size: 1.5rem; color:#5A5A5A}
 blue_text {font-weight: 500; color: blue}
 red_text {font-weight: 500; color: red}
 
+img_caption {
+  font-size: 0.8rem;
+  text-align: center;
+  font-style: italic;
+}
+
 /* PROJECT HEADER */
 
 #project_header {
@@ -106,6 +112,45 @@ red_text {font-weight: 500; color: red}
     text-align: center;  
     display: flex;
     flex-direction: column;
+}
+
+.picture_columns {
+  display: flex;
+  width: 100%;
+  gap: 20px; 
+  align-items: stretch; 
+  margin-top: 20px;
+}
+
+.picture_columns img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Shows the full image without cutting anything */
+}
+.picture_columns > div {
+  flex: 1; /* Each container div takes up equal width */
+}
+
+
+
+@media (max-width: 1125px) {
+  .picture_text_columns {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .column_text {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .column_image {
+    justify-content: center; 
+  }
+
+  .column_image img {
+    max-width: 80%; 
+  }
 }
 
   @media only screen and (max-width: 601px) {
