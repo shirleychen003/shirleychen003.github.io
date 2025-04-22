@@ -146,9 +146,6 @@ p {
     filter: brightness(0.8);
 }
 
-#PRESERVR:hover {
-    content: url('./images/home_images/preservr_comingsoon.png');
-}
 
 /* GET IN TOUCH */
 .get_in_touch {
