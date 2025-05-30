@@ -1,12 +1,9 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Plus Jakarta Sans", serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 html { 
@@ -19,13 +16,8 @@ html, body {
     padding: 0; 
 }
 /* TEXT */
-h1 { font-size: 36px; }
-h2 { font-size: 30px; }
-h3 { font-size: 28px; }
 project_type {font-size: 18px; font-weight: 800; color: #0A4A03;}
 project_date {font-size: 16px; font-weight: 600; font-style:italic;}
-project_section_header {font-family: "Newsreader", serif; font-size: 2.5rem;font-weight: 600;font-style:italic;}
-
 
 /* HERO */
 
