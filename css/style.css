@@ -1,5 +1,6 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -33,7 +34,7 @@ project_date {font-size: 16px; font-weight: 600; font-style:italic}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2.5rem 2rem 2.5rem 2rem;
     width: 100%;
 }
 
@@ -44,15 +45,22 @@ project_date {font-size: 16px; font-weight: 600; font-style:italic}
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    gap: 1.5rem;
+    gap: 1rem;
+    padding-top: 1rem;
 }
 
 hero_header {
+    font-family: "Newsreader", serif;
     width: 100%; 
     margin-top: 2.5rem;
     text-align: left;
-    font-size: 4.8rem;
-    font-weight: 600;
+    font-size: 5.3rem;
+    font-weight: 400;
+}
+header_italic {
+    font-family: "Newsreader", serif;
+    font-size: 5.3rem;
+    font-style: italic;
 }
 
 hero_p {
@@ -61,6 +69,7 @@ hero_p {
     font-size: 2rem;
     font-weight: 500;
     color:#5A5A5A;
+    margin-bottom: 0.5rem;
 }
 
 #hero img{
