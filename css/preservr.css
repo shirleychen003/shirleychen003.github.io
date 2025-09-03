@@ -1,12 +1,8 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
 }
 
 html { scroll-behavior: smooth;}
@@ -15,6 +11,7 @@ html, body {
     overflow-x: hidden;
     margin: 0; 
     padding: 0; 
+    background-color: #F6F6F6;  
 }
 
 /* TEXT */
@@ -33,7 +30,19 @@ img_caption {
 
 /* PROJECT HEADER */
 
+.header_img img{
+  width: 100%;
+}
+
 #project_header {
+    padding: 2rem 0 2rem 0;
+    justify-content: left;
+    align-items: left;
+    text-align: left; 
+    flex-direction: column;
+}
+
+/* #project_header {
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -43,7 +52,7 @@ img_caption {
     background-color: #F6F6F6;
     border-bottom: 2px solid black;
     margin-bottom: 1rem;
-}
+} */
 
 #project_title {
     display: flex;
@@ -60,27 +69,62 @@ img_caption {
 }
 
 #project_info {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; 
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid black;
 }
 
 .header_section {
-    margin: 1.5rem;
+  flex: 1;
+  text-align: left;
+  word-wrap: break-word; 
+  margin-bottom: 3rem;
 }
 
 .project_section {
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    padding: 1.5rem;
+  margin-bottom: 3rem;
   }
   
   .content {
     text-align: left;
-    max-width: 75%;
-    margin: 0 auto;       
+    max-width: 70%;
+    margin: 0 auto;  
+  }
+
+  #long_box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  #long_box p{
+    font-style: italic;
+  }
+
+  #small_box_grid {
+    display: flex;
+    align-items: stretch; 
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+
+  .small_box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .takeaway {
+    margin-bottom: 2rem;
   }
 
   #stat {

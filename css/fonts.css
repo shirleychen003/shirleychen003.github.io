@@ -12,11 +12,68 @@ body {
     font-family: var(--font-body);
 }
 
-/* TEXT */
+/* GENERAL */
 h1 { font-size: 3rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 subheading {font-size: 1.5rem; color:#5A5A5A}
 blue_text {font-weight: 500; color: blue}
 red_text {font-weight: 500; color: red}
-section_header {font-family: "Newsreader", serif; font-size: 2.5rem;font-weight: 600;font-style:italic;}
+
+subheading, project_title, blue_text, red_text, img_caption, section_header {
+  display: block;   /* makes them act like <div>/<p>/<h*> */
+}
+blue_text, red_text {
+  display: inline;  /* inline for colored text */
+}
+
+/* HOME PAGE */
+home_section_header {
+    font-family: "Newsreader", serif; 
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style:italic;
+}
+
+/* PROJECTS TEXT */
+project_title {
+    font-size: 3rem; 
+    font-family: "Newsreader", serif; 
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+section_header {
+    font-size: 1rem; 
+    font-weight: 600;
+    color:#868181;
+    margin-bottom: 1rem;
+}
+
+long_box_header {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+small_box_header {
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+subsection_header {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.list {
+    margin-left: 5%;
+    margin-top: 0.5rem;
+}
+
+
+
