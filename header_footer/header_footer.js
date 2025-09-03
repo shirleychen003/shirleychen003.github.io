@@ -12,6 +12,7 @@ function loadHTML(elementId, filePath, callback) {
 // Load header first, then initialize mobile menu
 loadHTML('header', 'header_footer/header.html', function () {
   initializeMobileMenu(); 
+  initializeNavbarScroll();
 });
 
 loadHTML('footer', 'header_footer/footer.html');
@@ -26,4 +27,31 @@ function initializeMobileMenu() {
           menuLinks.classList.toggle('active');
       });
   }
+}
+
+// Scroll + hiding navbar
+function initializeNavbarScroll() {
+  let lastScroll = 0;
+  const navbar = document.querySelector(".navbar");
+
+  if (!navbar) return; 
+
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.scrollY;
+
+    // show navbar at top
+    if (currentScroll <= 0) {
+      navbar.classList.remove("hidden");
+      return;
+    }
+
+    // navbar hidden when scrolling down
+    if (currentScroll > lastScroll) {
+      navbar.classList.add("hidden");
+    } else {
+      navbar.classList.remove("hidden");
+    }
+
+    lastScroll = currentScroll;
+  });
 }

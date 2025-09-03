@@ -24,17 +24,23 @@
 
 /* NAVBAR */
 .navbar {
-    background: white;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    border-bottom: 1.5px solid black;
-    padding: 2rem;
+background: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1.5px solid black;
+  padding: 2rem;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+nav.hidden {
+  transform: translateY(-100%);
 }
 
 .navbar__container {
