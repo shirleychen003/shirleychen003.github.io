@@ -127,10 +127,6 @@ img_caption {
     margin-bottom: 2rem;
   }
 
-  #stat {
-    text-align: center;
-  }
-
   .project_image {
     display: flex;
     justify-content: center;
@@ -142,6 +138,17 @@ img_caption {
     height: auto; 
     margin: 1.5rem 0 1.5rem 0; 
     object-fit: cover; 
+    border: black 1px solid;
+}
+
+.project_video {
+    display: flex;
+    justify-content: center;
+    max-width: 100%; 
+}
+.project_video video {
+  max-width: 100%;
+  height: auto;
 }
 
 #skills_list {
